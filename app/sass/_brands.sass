@@ -4,6 +4,9 @@
   @media (max-width: 1300px)
     margin-left: 20px
     padding-right: 20px
+  @media (max-width: 768px)
+    padding-right: 40px
+    margin-left: 40px
   .container
     max-width: 1320px
     flex-direction: column
@@ -13,6 +16,10 @@
     padding-left: 70px
     @media (max-width: 1300px)
       padding-left: 0
+    @media (max-width: 768px)
+      border-right: none
+      padding-top: 80px
+      padding-bottom: 20px
     &:after
       content: ''
       position: absolute
@@ -30,6 +37,8 @@
       line-height: 100%
       text-transform: uppercase
       color: #00245B
+      @media (max-width: 768px)
+        font-size: 64px
     h2
       font-family: Roboto, sans-serif
       font-style: normal
@@ -39,6 +48,9 @@
       color: #00245B
       max-width: 560px
       margin: 20px 0 60px 0
+      @media (max-width: 768px)
+        margin: 20px 0 40px 0
+        font-size: 16px
     .brands__buttons
       display: flex
       background: #FFFFFF
@@ -96,6 +108,31 @@
                 font-size: 22px
               @media (max-width: 768px)
                 font-size: 18px
+                display: none
+              &:nth-child(1)
+                @media (max-width: 768px)
+                  display: flex
+              &:nth-child(2)
+                @media (max-width: 768px)
+                  display: flex
+              &:nth-child(3)
+                @media (max-width: 768px)
+                  display: flex
+              &:nth-child(4)
+                @media (max-width: 768px)
+                  display: flex
+              &:nth-child(5)
+                @media (max-width: 768px)
+                  display: flex
+              &:nth-child(6)
+                @media (max-width: 768px)
+                  display: flex
+              &:nth-child(7)
+                @media (max-width: 768px)
+                  display: flex
+              &:nth-child(8)
+                @media (max-width: 768px)
+                  display: flex
               &:not(:last-child)
                 margin-bottom: 10px
                 @media (max-width: 1024px)
@@ -121,6 +158,8 @@
           .brands__wrapper-buttons
             display: flex
             margin-top: auto
+            @media (max-width: 768px)
+              display: none
             .brands__prev, .brands__next, .brands__prev-non, .brands__next-non
               width: 42px
               cursor: pointer
@@ -144,8 +183,13 @@
         .brands__beers
           @media (max-width: 1024px)
             margin-right: 100px
+          @media (max-width: 768px)
+            margin-top: auto
+            margin-right: -30px
           .brands__beer, .brands__beer-non
             display: none
+            @media (max-width: 768px)
+              margin-top: auto
             .brands__beer-img
               position: relative
               width: 334px
@@ -154,12 +198,19 @@
                 width: 250px
               @media (max-width: 1024px)
                 width: 334px
+              @media (max-width: 768px)
+                width: 138px
+                margin-top: auto
+                height: 300px
               img
                 &:last-child
                   width: 100%
                   height: 100%
                   object-fit: contain
                 &:first-child
+                  @media (max-width: 768px)
+                    width: 222px
+                    height: 309px
                   position: absolute
                   left: 50%
                   bottom: 0
