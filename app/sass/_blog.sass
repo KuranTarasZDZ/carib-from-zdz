@@ -1,0 +1,156 @@
+.blog
+  margin-top: 120px
+  .bg
+    width: 100%
+    height: 300px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .container
+    flex-direction: column
+    max-width: 1280px
+    padding: 100px 70px 150px 70px
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      transform: translateX(-100%)
+      height: calc(100% - 396px)
+      bottom: 150px
+      width: 220px
+      background: rgba(0, 36, 91, 0.05)
+    &:after
+      content: ''
+      position: absolute
+      bottom: 175px
+      width: calc(100% - 140px)
+      height: 1px
+      background: #E6EAEF
+      left: 50%
+      transform: translateX(-50%)
+    h1
+      margin-bottom: 50px
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        top: 50%
+        width: 220px
+        height: 68px
+        background: #FBB500
+        transform: translateX(-100%) translateY(-50%)
+    .blog__cont
+      display: flex
+      flex-direction: column
+      .blog__img
+        width: 100%
+        height: 320px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      .blog__text
+        display: flex
+        flex-direction: column
+        margin-top: 20px
+        .blog-date
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: 500
+          font-size: 14px
+          line-height: 100%
+          letter-spacing: 0.05em
+          text-transform: uppercase
+          color: #00245B
+          opacity: 0.7
+        .blog-title
+          font-family: Apotek, sans-serif
+          font-style: normal
+          font-weight: 800
+          font-size: 24px
+          line-height: 100%
+          letter-spacing: 0.05em
+          text-transform: uppercase
+          color: #00245B
+          margin: 30px 0 15px 0
+        .blog-p
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 140%
+          color: #00245B
+      .blog__big
+        margin-bottom: 70px
+        .blog__img
+          height: 400px
+      .blog__wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 70px
+    .blog-btn
+      font-family: Apotek, sans-serif
+      font-style: normal
+      font-weight: 716
+      font-size: 18px
+      line-height: 140%
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #00245B
+      background: #FFFFFF
+      border: 1px solid #E6EAEF
+      backdrop-filter: blur(15px)
+      border-radius: 100px
+      padding: 13px 30px
+      margin: 50px auto 0 auto
+      position: relative
+      z-index: 1
+      cursor: pointer
+    .blog__container-bg
+      img
+        right: -76px
+        top: 245px
+        position: absolute
+        transform: translateX(100%)
+
+.blog_brand-page
+  margin-top: 0
+  .container
+    padding: 150px 70px 100px 70px
+    &:after
+      bottom: 125px
+    &:before
+      bottom: 100px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

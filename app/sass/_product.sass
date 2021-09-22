@@ -1,0 +1,297 @@
+.product
+  margin-top: 120px
+  .container
+    max-width: 100%
+    flex-direction: column
+    .product__top
+      overflow: hidden
+      display: flex
+      width: 100%
+      position: relative
+      height: 1000px
+      .product__top-img
+        img
+          &:first-child
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            z-index: 1
+          &:last-child
+            position: absolute
+            bottom: 0
+            z-index: 1
+            left: 0
+            width: 100%
+      .product__titles
+        display: flex
+        flex-direction: column
+        position: relative
+        z-index: 2
+        width: 100%
+        max-width: 1280px
+        align-items: flex-end
+        margin: 185px auto 0 auto
+        h1
+          font-family: RamaGothicMW01-Heavy, sans-serif
+          font-style: normal
+          font-weight: 900
+          font-size: 288px
+          line-height: 100%
+          text-transform: uppercase
+          color: #FBB500
+        h2
+          margin-top: -23px
+          font-family: Apotek, sans-serif
+          font-style: normal
+          font-weight: 800
+          font-size: 83px
+          line-height: 100%
+          letter-spacing: 0.05em
+          text-transform: uppercase
+          color: #FFFFFF
+    .product__wrapper
+      display: flex
+      width: 100%
+      padding: 0 70px
+      max-width: 1280px
+      margin: -150px auto 0 auto
+      border-right: 1px solid rgba(0, 36, 91, 0.1)
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        width: 220px
+        transform: translateX(-100%)
+        height: calc(100% - 270px)
+        bottom: 0
+        background: rgba(0, 36, 91, 0.05)
+      .product__text
+        margin-top: auto
+        margin-bottom: 150px
+        display: flex
+        flex-direction: column
+        max-width: 343px
+        h3
+          font-family: RamaGothicMW01-Heavy, sans-serif
+          font-style: normal
+          font-weight: 900
+          font-size: 96px
+          line-height: 100%
+          text-transform: uppercase
+          color: #00245B
+        h4
+          font-family: Apotek, sans-serif
+          font-style: normal
+          font-weight: 800
+          font-size: 28px
+          line-height: 100%
+          text-transform: uppercase
+          color: #FBB500
+          margin-bottom: 40px
+        h5
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 140%
+          color: #00245B
+          margin-bottom: 65px
+        .product__socials
+          display: flex
+          .product__social
+            &:not(:last-child)
+              margin-right: 30px
+      .product__img
+        position: relative
+        margin: 0 auto
+        img
+          &:last-child
+            width: 484px
+            position: relative
+            z-index: 2
+            height: 1044px
+          &:first-child
+            position: absolute
+            top: 20px
+            left: -183px
+      .product__about
+        margin-top: auto
+        margin-bottom: 150px
+        display: flex
+        flex-direction: column
+        .product__about-item
+          display: flex
+          flex-direction: column
+          position: relative
+          cursor: pointer
+          &:hover
+            &:after
+              height: 100%
+          &:after
+            content: ''
+            position: absolute
+            right: -70px
+            top: 50%
+            width: 4px
+            height: 0
+            transition-duration: .4s
+            background: #FBB500
+            transform: translateY(-50%)
+          &:not(:last-child)
+            margin-bottom: 40px
+          span
+            &:first-child
+              font-family: Apotek, sans-serif
+              font-style: normal
+              font-weight: 716
+              font-size: 18px
+              line-height: 140%
+              letter-spacing: 0.05em
+              text-transform: uppercase
+              color: #00245B
+              opacity: 0.5
+            &:last-child
+              font-family: RamaGothicMW01-Heavy, sans-serif
+              font-style: normal
+              font-weight: 900
+              font-size: 96px
+              line-height: 100%
+              color: #00245B
+    .product__buttons
+      display: flex
+      width: 100%
+      max-width: 1280px
+      padding: 0 70px 150px 70px
+      margin: 0 auto
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        width: 220px
+        transform: translateX(-100%)
+        height: 100%
+        bottom: 0
+        background: rgba(0, 36, 91, 0.05)
+      .product__buttons-bg
+        img
+          position: absolute
+          bottom: 150px
+          transform: translateX(-100%)
+          left: 5px
+      .product__btn
+        width: 50%
+        background: rgba(0, 36, 91, 0.05)
+        position: relative
+        padding: 40px 70px
+        cursor: pointer
+        transition-duration: .4s
+        &:hover
+          background: #FBB500
+          .product__btn-text
+            .product__btn-link
+              span
+                color: #00245B
+              svg
+                path
+                  stroke: #00245B
+            .product__btn-name
+              color: #00245B
+        .product__btn-img
+          position: absolute
+          width: 226px
+          height: 283px
+          left: 3px
+          bottom: -36px
+          img
+            width: 100%
+            height: 100%
+            object-fit: contain
+        .product__btn-text
+          display: flex
+          flex-direction: column
+          align-items: flex-end
+          .product__btn-link
+            display: flex
+            align-items: center
+            span
+              transition-duration: .4s
+              font-family: Roboto, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 16px
+              line-height: 140%
+              text-transform: uppercase
+              color: #EA6510
+              margin-left: 15px
+            svg
+              path
+                transition-duration: .4s
+                stroke: #EA6510
+          .product__btn-name
+            font-family: Apotek, sans-serif
+            font-style: normal
+            transition-duration: .4s
+            font-weight: 800
+            font-size: 24px
+            line-height: 100%
+            text-transform: uppercase
+            color: #00245B
+            margin-top: 10px
+      .product__next
+        .product__btn-img
+          right: 3px
+          bottom: -36px
+          top: auto
+          left: auto
+        .product__btn-text
+          align-items: flex-start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
